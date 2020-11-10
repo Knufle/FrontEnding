@@ -1,4 +1,18 @@
 import { useState } from 'react';
+import Head from 'next/head';
+
+function IndexPage() {
+    return (
+      <div>
+        <Head>
+          <title>FrontEnding</title>
+          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+          <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="icon" />
+        </Head>
+        <Home/>
+      </div>
+    )
+  }
 
 function Home() {
     return (
@@ -25,4 +39,4 @@ function Contador() {
     )
 }
 
-export default Home
+export default IndexPage
